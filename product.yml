@@ -1,3 +1,17 @@
 schema-version: 1.0
 name: k8s
 
+products:
+  - name: docker-ce
+    model:
+      user: "{{ user }}"
+
+annotations:
+  virtualbox:
+    cpus: 2
+    memory: 2048
+  aws:
+    type: t2.medium
+
+var:
+  user: default

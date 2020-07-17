@@ -1,0 +1,8 @@
+labels:
+  osid: ubuntu
+actions:
+  - pkg:
+      gpg: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+      location: deb http://apt.kubernetes.io/ kubernetes-xenial main
+      packages: kubeadm kubelet kubectl
+      after: apt-mark hold kubeadm kubelet kubectl

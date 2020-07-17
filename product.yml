@@ -15,3 +15,8 @@ annotations:
 
 var:
   user: default
+  master: false
+  pod_network_cidr: 10.244.0.0/16
+
+provision:
+  - shell: prepare.sh

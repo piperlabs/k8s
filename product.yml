@@ -20,3 +20,4 @@ var:
 
 provision:
   - shell: prepare.sh
+  - shell: init.sh
